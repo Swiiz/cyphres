@@ -1,0 +1,12 @@
+[package]
+name = "cyphres"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+default = ["aes", "xor"]
+aes = ["dep:aes-gcm"]
+xor = []
+
+[dependencies]
+aes-gcm = { version = "0.10.3", optional = true }
