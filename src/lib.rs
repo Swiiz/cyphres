@@ -1,6 +1,5 @@
 #[cfg(feature = "aes")]
 pub mod aes;
-
 #[cfg(feature = "xor")]
 pub mod xor;
 
